@@ -11,8 +11,8 @@ import os
 
 load_dotenv()
 
-RPC_URL: str = 'https://1rpc.io/zksync2-era'
-CHAIN_ID: int = 324
+RPC_URL: str = 'https://mainnet.infura.io/v3/'
+CHAIN_ID: int = 1
 HACKED_WALLET_PRIVATE_KEY: str = os.getenv('HACKED_WALLET_PRIVATE_KEY')
 HACKER_ADDRESS: ChecksumAddress = Web3.to_checksum_address(os.getenv('HACKER_ADDRESS'))
 
